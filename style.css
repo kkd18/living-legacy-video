@@ -1,0 +1,505 @@
+/* CSS files add styling rules to your content 
+colors: 
+Teal #c6e4eb
+Grey #a7a9ac
+Dark grey #666666
+White #ffffff
+*/
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+h1 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #666666;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 2.4vw;
+}
+
+h3 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  font-size: 2.4vw;
+}
+
+h4 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 600;
+  font-style: italic;
+  color: black;
+  font-size: 25px;
+}
+
+p {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.4vw;
+}
+
+p2 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  font-size: 15px;
+}
+
+p3 {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+  font-size: 15px;
+}
+
+body {
+  font-family: adobe-garamond-pro, serif;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  font-size:100%
+}
+
+main {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+  z-index: 0;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  margin-top: -17px;
+  margin-right:0px;
+  background-color: #efefef;
+}
+
+.logo1 img {
+  width: 160px;
+  padding: 20px;
+  display: inline;
+  float: left;
+  position: absolute;
+  z-index: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+html {
+  font-family: "adobe-garamond-pro", serif;
+}
+
+.nav {
+  text-align: right;
+  height: 20%;
+  line-height: 70px;
+}
+
+.menu {
+  padding-top: 50px;
+  margin: 0px 30px 0px 0px;
+  z-index: 1;
+}
+
+.menu a {
+  padding: 20px;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  clear: right;
+  text-decoration: none;
+  color: #666666;
+  margin: 0px 25px;
+  line-height: 20px;
+}
+
+label {
+  margin: 60px 40px 0px 0px;
+  font-size: 30px;
+  line-height: 20px;
+  display: none;
+  width: auto;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin:auto;
+    z-index: 1;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #666666;
+    margin: 0px;
+    margin-right:0px;
+    background-color: white;
+    background-color: white (0, 0, 0, 0.9);
+    overflow-x: ;
+    transition: 0.5s;
+    z-index: 9999;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
+
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.mySlides {
+  display: none;
+  margin:auto;
+}
+
+img {
+  vertical-align: middle;
+  margin:auto;
+}
+
+ {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 15px;
+  z-index:-1;
+}
+
+/* Hide the images by default */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box
+}
+
+.wrapper{
+  padding:5px;
+  max-width:100%;
+  width:95%;
+  margin:15px;
+}
+
+.columns{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  margin:5px;
+}
+
+.column{
+  flex:1;
+  margin:15px;
+  padding:auto;
+  margin-left:25px;
+  line-height:2vw;
+}
+
+
+
+
+
+.quote {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+
+
+#works {
+  margin-left: 15px;
+  margin-bottom: -20px;
+  height: auto;
+}
+
+.howitworks img {
+  width: 90%;
+  height: auto;
+  padding-left: 60px;
+  margin-top: 0px;
+  position: relative;
+  z-index: -1;
+}
+
+.workshero{
+    z-index:-1;
+  position:relative;
+}
+
+.howitworks {
+  height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+    z-index:-1;
+  position:relative;
+}
+
+
+.abouthero {
+  padding: 15px;
+  z-index:-1;
+  position:relative;
+}
+
+.ourstory {
+  margin-top: -10px;
+}
+
+.column img{
+  margin-top:10px;
+}
+
+.services {
+  clear: both;
+  margin: 15px;
+  padding:15px;
+  line-height:2vw;
+  height: auto;
+  width: auto;
+  position: relative;
+  background-color: #c6e4eb;
+}
+
+.services h3{
+  maqrgin-bottom:10px;
+  line-height:3vw;
+}
+
+.contact h5 {
+  margin-top: 0px;
+}
+
+.workshero {
+  padding: 15px;
+  z-index: -1;
+}
+
+.worksicons{
+  margin-left:15px;
+}
+
+.worksicons h2 {
+  margin-bottom:10px;
+}
+
+.worksicons img {
+  width: 90%;
+  height: auto;
+  padding-left: 60px;
+  margin-top: 0px;
+}
+
+.video2 {
+  height: auto;
+  width: 90%;
+  position:relative;
+  z-index:-1;
+  
+}
+
+video {
+  height: auto;
+  padding: 15px;
+  display: block;
+  width: auto;
+  margin: auto;
+  z-index: -1;
+}
+
+.social img{
+  width:40%;
+  float:right;
+}
+.social{
+  float:right;
+  padding:20px;
+  padding-right:40px;
+  position:relative;
+  top:-100px;
+  bottom:0px;
+  margin-bottom:0px;
+}
+
+footer {
+  clear: both;
+  background-color: #efefef;
+  height: 120px;
+  margin-top: 0px;
+  margin-right:0px;
+  margin-bottom:none;
+}
+
+footer h4 {
+  margin-left: 15px;
+  margin-right:0px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+}
+
+footer p3 {
+  margin-left: 15px;
+}
+
+footer p3 a {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+  font-size: 15px;
+}
+
+footer a {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+  font-size: 15px;
+}
